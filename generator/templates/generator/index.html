@@ -2,7 +2,7 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
-<link rel="stylesheet" type="text/css" href="{% static 'urfu_project/staticfiles/style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'generator/style.css' %}">
 <body>
     <select class = "menu">
         <option value="" class="choise">...</option>
@@ -29,7 +29,7 @@
         {% for row in table.rows%}
             <tr>
                 {% for col in row %}
-                    <img src="{% static col %}" width="100px" height="100px">
+                    <img src="{% static col %}" width="100px" height="100px"-->
                 {% endfor %}
             </tr>
         </table>

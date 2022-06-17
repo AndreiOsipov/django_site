@@ -1,0 +1,1 @@
+web: gunicorn urfu_project.wsgi --log-file -

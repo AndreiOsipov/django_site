@@ -29,7 +29,8 @@
         {% for row in table.rows%}
             <tr>
                 {% for col in row %}
-                    <img src="{% static col %}" width="100px" height="100px">
+                    {{% col %}}
+                    <!--img src="{% static col %}" width="100px" height="100px"-->
                 {% endfor %}
             </tr>
         </table>

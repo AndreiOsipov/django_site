@@ -7,4 +7,4 @@ def generate_image_list(key_word):
     for i in range(len(files)):
         full_path = os.path.join(path, files[i])
         image_name_list.append(full_path)
-    return image_name_list
+    return files

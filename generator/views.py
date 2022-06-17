@@ -1,6 +1,5 @@
 from django.shortcuts import render
 from .Forms import KeyWordForm
-from .image_list_generator import generate_image_list
 from .image_table import Image_Table
 
 def index(request):

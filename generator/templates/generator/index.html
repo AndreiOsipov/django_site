@@ -30,7 +30,7 @@
             <tr>
                 {% for col in row %}
                     <p>{{ col }}</p>
-                    <p><img src="{{ col }}" width="100px" height="100px"></p>
+                    <p><img src="data:image/png;base64,{{ col }}" width="100px" height="100px"></p>
                 {% endfor %}
             </tr>
         </table>

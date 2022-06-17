@@ -1,7 +1,8 @@
 import os
 def generate_image_list(key_word):
     image_name_list = []
-    path = 'C:/Users/andre/OneDrive/Desktop/veb-site/urfu_project/generator/static/generator/images'
+    PATH = os.path.dirname(os.path.abspath(__file__))
+    path = os.join(PATH, 'static/generator/images')
     files = os.listdir(path=path)
     for i in range(len(files)):
         full_path = os.path.join(path, files[i])

@@ -9,5 +9,5 @@ def generate_image_list(key_word):
     for i in range(len(files)):
         full_path = os.path.join(path, files[i])
         with open(full_path, "rb") as image_file:
-            string_image_list.append(base64.b64decode(image_file.read())).decode('utf-8')
+            string_image_list.append(base64.b64decode(image_file.read()).decode('utf-8'))
     return string_image_list

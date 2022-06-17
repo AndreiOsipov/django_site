@@ -17,7 +17,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STATIC_ROOT =  os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'staticfiles'),
+    os.path.join(BASE_DIR, 'generator/static/generator'),
+    os.path.join(BASE_DIR, 'generator/static/generator/images'),
 ]
 
 # Quick-start development settings - unsuitable for production
